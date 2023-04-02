@@ -32,9 +32,9 @@
                   </td>
                   <td>{{date('Y-m-d',strtotime($item->created_at))}}</td>
                   <td style="padding:5px;">
-                    <a href="{{route('view_post',encrypt($item->id))}}"><i class="fa fa-eye" style="font-size:18px"></i></a>
-                    <a href="{{route('edit_post',encrypt($item->id))}}"><i class="fa fa-pencil" style="font-size:18px"></i></a>          
-                    <a href="{{route('delete_post',encrypt($item->id))}}" onclick="return confirm('Are you sure you want to delete')"><i class="fa fa-close" style="font-size:18px"></i></a>
+                    <a href="{{route('view_post',encrypt($item->id))}}" title="View"><i class="fa fa-eye" style="font-size:18px"></i></a>
+                    <a href="{{route('edit_post',encrypt($item->id))}}" title="Edit"><i class="fa fa-pencil" style="font-size:18px"></i></a>          
+                    <a href="{{route('delete_post',encrypt($item->id))}}" title="Delete" onclick="return confirm('Are you sure you want to delete')"><i class="fa fa-close" style="font-size:18px"></i></a>
                   </td>
                 </tr>
                 @endforeach

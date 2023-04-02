@@ -32,9 +32,9 @@
 <div class="container-fluid">
   
   <div class="row content">
-    <div class="col-sm-12" style="background-color:#f1f1f1">
+    <div class="col-sm-12" style="background-color:#f1f1f1;padding:10px;">
       <label for="" style="font-weight:700;font-size:23px;">Blog App</label>
-      <a href="{{route('logout')}}" class="btn btn-primary" style="float:right;margin-top:2px;">Logout</a>
+      <a href="{{route('logout')}}" class="btn btn-primary" style="float:right;">Logout</a>
     </div>
     <div class="col-sm-2 sidenav">
       {{-- <h4>Blog App</h4> --}}
@@ -48,7 +48,7 @@
       @if (session()->has('success'))
       <div class="col-sm-10 alert alert-success">
         
-          {{session('success')}}
+          <div style="margin:3px;">{{session('success')}}</div>
         
         
       </div>
